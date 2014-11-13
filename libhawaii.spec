@@ -15,6 +15,7 @@ BuildRequires:	pkgconfig(Qt5Gui)
 BuildRequires:	pkgconfig(Qt5Qml)
 BuildRequires:	pkgconfig(Qt5Quick)
 BuildRequires:	cmake
+BuildRequires:	extra-cmake-modules
 Requires:	%{libname} = %{EVRD}
 
 %track

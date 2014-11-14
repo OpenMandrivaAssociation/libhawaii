@@ -5,7 +5,7 @@
 Summary:	Library shared among Hawaii Shell and other applications
 Name:		libhawaii
 Version:	0.3.0
-Release:	1
+Release:	2
 Group:		Graphical desktop/Other
 License:	LGPLv2+ and GPLv2+
 URL:		http://www.maui-project.org
@@ -39,6 +39,7 @@ Main library for %{name}.
 %package -n %{develname}
 Summary:	Development files for Hawaii library
 Group:		Development/C++
+Provides:	%{name}-devel = %{EVRD}
 Requires:	%{libname} = %{EVRD}
 
 %description -n %{develname}

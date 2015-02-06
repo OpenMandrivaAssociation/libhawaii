@@ -5,7 +5,7 @@
 Summary:	Library shared among Hawaii Shell and other applications
 Name:		libhawaii
 Version:	0.3.0
-Release:	3
+Release:	4
 Group:		Graphical desktop/Other
 License:	LGPLv2+ and GPLv2+
 URL:		http://www.maui-project.org

@@ -59,13 +59,16 @@ Development files and headers for %{name}.
 %makeinstall_std -C build
 
 %files
-%{_libdir}/hawaii
+%{_libdir}/qml/org/hawaii/settings/libsettingsplugin.so
+%{_libdir}/qml/org/hawaii/settings/plugins.qmltypes
+%{_libdir}/qml/org/hawaii/settings/qmldir
 
 %files -n %{libname}
 %{_libdir}/*.so.%{major}*
 
 %files -n %{develname}
 %doc AUTHORS README.md
+%{_includedir}/Hawaii/Hawaii/QGSettings
+%{_includedir}/Hawaii/Hawaii/*.h
 %{_libdir}/*.so
-%{_includedir}/hawaii
-%{_libdir}/cmake/*
+%{_libdir}/cmake/Hawaii/*.cmake

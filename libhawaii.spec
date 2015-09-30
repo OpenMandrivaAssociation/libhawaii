@@ -4,8 +4,8 @@
 
 Summary:	Library shared among Hawaii Shell and other applications
 Name:		libhawaii
-Version:	0.3.0
-Release:	4
+Version:	0.5.90
+Release:	1
 Group:		Graphical desktop/Other
 License:	LGPLv2+ and GPLv2+
 URL:		http://www.maui-project.org
@@ -14,8 +14,7 @@ BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5Gui)
 BuildRequires:	pkgconfig(Qt5Qml)
 BuildRequires:	pkgconfig(Qt5Quick)
-BuildRequires:	cmake
-BuildRequires:	extra-cmake-modules5
+BuildRequires:	cmake(ECM)
 Requires:	%{libname} = %{EVRD}
 
 %track

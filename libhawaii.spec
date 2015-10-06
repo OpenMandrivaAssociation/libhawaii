@@ -69,6 +69,6 @@ Development files and headers for %{name}.
 %files -n %{develname}
 %doc AUTHORS README.md
 %{_includedir}/Hawaii/Hawaii/QGSettings
-%{_includedir}/Hawaii/Hawaii/*.h
+%{_includedir}/Hawaii/hawaii/*.h
 %{_libdir}/*.so
 %{_libdir}/cmake/Hawaii/*.cmake

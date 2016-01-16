@@ -4,18 +4,19 @@
 
 Summary:	Library shared among Hawaii Shell and other applications
 Name:		libhawaii
-Version:	0.5.90
+Version:	0.6.0
 Release:	1
 Group:		Graphical desktop/Other
 License:	LGPLv2+ and GPLv2+
-URL:		http://www.maui-project.org
-Source0:	http://downloads.sourceforge.net/mauios/%{name}-%{version}.tar.gz
+URL:		http://hawaiios.org/
+Source0:	https://github.com/hawaii-desktop/libhawaii/releases/download/v%{version}/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5Gui)
 BuildRequires:	pkgconfig(Qt5Qml)
 BuildRequires:	pkgconfig(Qt5Quick)
 BuildRequires:	pkgconfig(Qt5Test)
 BuildRequires:	pkgconfig(Qt5QuickTest)
+BuildRequires:	pkgconfig(gio-2.0)
 BuildRequires:	cmake(ECM)
 Requires:	%{libname} = %{EVRD}
 
@@ -49,7 +50,6 @@ Development files and headers for %{name}.
 
 %prep
 %setup -q
-
 
 %build
 %cmake_qt5

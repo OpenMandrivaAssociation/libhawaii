@@ -47,7 +47,6 @@ Requires:	%{libname} = %{EVRD}
 %description -n %{develname}
 Development files and headers for %{name}.
 
-
 %prep
 %setup -q
 
@@ -59,15 +58,21 @@ Development files and headers for %{name}.
 %makeinstall_std -C build
 
 %files
-%{_libdir}/qml/org/hawaii/settings/libsettingsplugin.so
-%{_libdir}/qml/org/hawaii/settings/plugins.qmltypes
-%{_libdir}/qml/org/hawaii/settings/qmldir
+%dir %{_libdir}/qml/org/hawaiios
+%dir %{_libdir}/qml/org/hawaiios/settings
+%{_libdir}/qml/org/hawaiios/settings/libsettingsplugin.so
+%{_libdir}/qml/org/hawaiios/settings/plugins.qmltypes
+%{_libdir}/qml/org/hawaiios/settings/qmldir
 
 %files -n %{libname}
 %{_libdir}/*.so.%{major}*
 
 %files -n %{develname}
 %doc AUTHORS README.md
+%dir %{_includedir}/Hawaii
+%dir %{_includedir}/Hawaii/Hawaii
+%dir %{_includedir}/Hawaii/hawaii
+%dir %{_libdir}/cmake/Hawaii
 %{_includedir}/Hawaii/Hawaii/QGSettings
 %{_includedir}/Hawaii/hawaii/*.h
 %{_libdir}/*.so

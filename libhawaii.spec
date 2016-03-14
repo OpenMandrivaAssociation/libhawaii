@@ -4,12 +4,12 @@
 
 Summary:	Library shared among Hawaii Shell and other applications
 Name:		libhawaii
-Version:	0.6.0
+Version:	0.6.90
 Release:	1
 Group:		Graphical desktop/Other
 License:	LGPLv2+ and GPLv2+
 URL:		http://hawaiios.org/
-Source0:	https://github.com/hawaii-desktop/libhawaii/releases/download/v%{version}/%{name}-%{version}.tar.xz
+Source0:	https://github.com/hawaii-desktop/libhawaii/releases/download/v%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5Gui)
 BuildRequires:	pkgconfig(Qt5Qml)

@@ -68,7 +68,7 @@ Development files and headers for %{name}.
 %{_libdir}/*.so.%{major}*
 
 %files -n %{develname}
-%doc AUTHORS README.md
+%doc README.md
 %dir %{_includedir}/Hawaii
 %dir %{_includedir}/Hawaii/Hawaii
 %dir %{_includedir}/Hawaii/hawaii

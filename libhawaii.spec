@@ -58,11 +58,10 @@ Development files and headers for %{name}.
 %makeinstall_std -C build
 
 %files
-%dir %{_libdir}/qml/org/hawaiios
-%dir %{_libdir}/qml/org/hawaiios/settings
-%{_libdir}/qml/org/hawaiios/settings/libsettingsplugin.so
-%{_libdir}/qml/org/hawaiios/settings/plugins.qmltypes
-%{_libdir}/qml/org/hawaiios/settings/qmldir
+%dir %{_libdir}/qml/org/Hawaii/GSettings
+%{_libdir}/qml/Hawaii/GSettings/*.so
+%{_libdir}/qml/Hawaii/GSettings/plugins.qmltypes
+%{_libdir}/qml/Hawaii/GSettings/qmldir
 
 %files -n %{libname}
 %{_libdir}/*.so.%{major}*
@@ -70,10 +69,13 @@ Development files and headers for %{name}.
 %files -n %{develname}
 %doc README.md
 %dir %{_includedir}/Hawaii
-%dir %{_includedir}/Hawaii/Hawaii
+%dir %{_includedir}/Hawaii/GSettings
 %dir %{_includedir}/Hawaii/hawaii
+%dir %{_includedir}/Hawaii/gsettings
 %dir %{_libdir}/cmake/Hawaii
-%{_includedir}/Hawaii/Hawaii/QGSettings
+%{_includedir}/Hawaii/GSettings/QGSettings
+%{_includedir}/Hawaii/gsettings/*.h
 %{_includedir}/Hawaii/hawaii/*.h
 %{_libdir}/*.so
 %{_libdir}/cmake/Hawaii/*.cmake
+%{_libdir}/cmake/Hawaii/*.in

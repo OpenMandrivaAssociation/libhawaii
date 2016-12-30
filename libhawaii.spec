@@ -4,7 +4,7 @@
 
 Summary:	Library shared among Hawaii Shell and other applications
 Name:		libhawaii
-Version:	0.7.0
+Version:	0.8.0
 Release:	1
 Group:		Graphical desktop/Other
 License:	LGPLv2+ and GPLv2+

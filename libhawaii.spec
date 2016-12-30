@@ -58,7 +58,7 @@ Development files and headers for %{name}.
 %makeinstall_std -C build
 
 %files
-%dir %{_libdir}/qml/org/Hawaii/GSettings
+%dir %{_libdir}/qml/Hawaii/GSettings
 %{_libdir}/qml/Hawaii/GSettings/*.so
 %{_libdir}/qml/Hawaii/GSettings/plugins.qmltypes
 %{_libdir}/qml/Hawaii/GSettings/qmldir
